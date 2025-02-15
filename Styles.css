@@ -45,6 +45,7 @@ body::before {
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-left: 8%;
+    color: white;
 }
 
 .Img1{
@@ -62,6 +63,7 @@ body::before {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 2vw;
     margin-left: 2%;
+    color: white;
 }
 
 .earnings {
@@ -71,6 +73,7 @@ body::before {
     font-size: 2.1vw;
     margin-top: 0;
     margin-bottom: 0;
+    color: white;
 }
 
 .text {
@@ -80,6 +83,7 @@ body::before {
     width: 100%;
     margin-left: 5%;
     font-size: 1.5vw;
+    color: white;
 }
 
 .hotdog {
