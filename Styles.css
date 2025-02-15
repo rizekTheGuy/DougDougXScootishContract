@@ -1,0 +1,181 @@
+body {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.Center {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Counter{
+    margin: 0 auto;
+    width: 60%;
+    height: 25vw;
+    border: black 1px solid;
+    overflow: hidden;
+    position: relative;
+}
+
+.Timer{
+    font-size: 5.2vw;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 8%;
+}
+
+.Img1{
+    height: 25vw;
+}
+
+.timerbar{
+    display: flex;
+}
+
+.est {
+    margin: auto 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2vw;
+    margin-left: 2%;
+}
+
+.earnings {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 2.1vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    width: 100%;
+    margin-left: 5%;
+    font-size: 1.5vw;
+}
+
+.hotdog {
+    margin-top: 0;
+}
+
+.Images {
+    display: flex;
+    width: 60%;
+    height: 15vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.Imgs {
+    height: 100%;
+}
+
+.Links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.3vw;
+}
+
+.Links a {
+    text-decoration: none;
+}
+
+#money-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.money {
+    position: absolute;
+    font-size: 2rem;
+    color: green;
+    opacity: 0;
+    animation: fall 5s linear infinite;
+}
+
+.rizek {
+    font-size: 1vw;
+}
+
+@keyframes fall {
+    0% {
+        top: -100px;
+        opacity: 1;
+    }
+    100% {
+        top: 90vh;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Counter{
+        width: 95%;
+        height: 200px;
+    }
+
+    .rizek {
+        font-size: 1.9vw;
+    }
+    
+    .Timer{
+        font-size: 50px;
+    }
+
+    .Img1{
+        height: 50vw;
+    }
+
+    .text{
+        font-size: 2.4vw;
+    }
+
+    .earnings{
+        font-size: 3.2vw;
+    }
+
+    .Images{
+        margin-top: 15vw;
+        width: 95%;
+        height: 40vw;
+    }
+
+    .Links{
+        font-size: 2.5vw;
+    }
+}
