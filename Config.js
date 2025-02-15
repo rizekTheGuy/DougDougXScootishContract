@@ -26,7 +26,7 @@ function createMoney() {
     money.classList.add('money');
     money.textContent = '💵';
     
-    const x = Math.random() * window.innerWidth;
+    const x = Math.random() * document.documentElement.clientWidth;
     money.style.left = `${x}px`;
 
     document.getElementById('money-rain').appendChild(money);
