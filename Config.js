@@ -24,7 +24,7 @@ setInterval(calculateTime, 1000);
 function createMoney() {
     const money = document.createElement('div');
     money.classList.add('money');
-    money.textContent = '💵';
+    money.textContent = '😢';
     
     const x = Math.random() * document.documentElement.clientWidth;
     money.style.left = `${x}px`;
