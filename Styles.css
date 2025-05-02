@@ -32,24 +32,34 @@ body::before {
     margin: 0 auto;
     width: 60%;
     height: 25vw;
-    border: black 1px solid;
+    border: rgb(255, 255, 255) 1px solid;
     overflow: hidden;
     position: relative;
 }
 
 .Timer{
     font-size: 5.2vw;
-    margin-top: 25px;
+    margin-top: 0;
     margin-bottom: 0;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-left: 8%;
-    color: white;
+    margin: 0 auto;
+    margin-bottom: -3%;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    z-index: 3;
 }
 
 .Img1{
-    height: 25vw;
+    position: absolute;
+    justify-content: center;
+    left: 5%;
+    height: fit-content;
+    width: 80%;
+    justify-content: center;
+    top: 0%;
+    z-index: 1;
 }
 
 .timerbar{
@@ -80,10 +90,39 @@ body::before {
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: bold;
-    width: 100%;
-    margin-left: 5%;
-    font-size: 1.5vw;
-    color: white;
+    width: 36%;
+    font-size: 1vw;
+    color: black;
+    margin-left: auto;
+    margin-top: 3%;
+}
+
+.a {
+    margin-left: -15%;
+}
+
+.b {
+    margin-left: 15%;
+}
+
+.d {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.e {
+    z-index: -10;
+}
+
+.text2 {
+    width: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 0.56vw;
+    color: black;
 }
 
 .hotdog {
@@ -187,4 +226,11 @@ body::before {
     .Links{
         font-size: 2.5vw;
     }
+}
+
+.c {
+    margin: 0;
+    font-size: 0.45vw;
+    padding-right: 30%;
+    margin-top: -2%;
 }
